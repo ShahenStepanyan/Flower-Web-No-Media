@@ -1,0 +1,754 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(foto/Texture.png);
+    width: 100%;
+    background-size: 95%;
+    background-color: #e2ded2;
+}
+
+nav {
+    width: 100%;
+    background-color: #c87e6b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.type {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 23px;
+    color: #e7e4db;
+    font-weight: 800;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 13px;
+}
+
+.type-logo {
+    display: inline-block;
+    color: white;
+    margin-left: 10px
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.menu-block {
+    width: 176px;
+    height: 200px;
+    background-color: #c87e6b;
+    position: absolute;
+    z-index: 100;
+    animation: 3s ease-in 1s infinite reverse both running slidein;
+    display: none;
+
+
+}
+
+.menu-block:hover {
+    top: 0px;
+}
+
+.logo-li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 25px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.block-for-text {
+    display: flex;
+}
+
+.news-text {
+    font-size: 58px;
+    letter-spacing: 1px;
+    line-height: 53px;
+    color: #484a4b;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    text-align: center;
+    padding-top: 170px;
+}
+
+.news-text-one {
+    font-size: 25px;
+    line-height: 97px;
+    color: #765a33;
+    font-weight: 600;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+}
+
+.news-last-text {
+    font-size: 25px;
+    line-height: 29px;
+    color: #765a33;
+    font-weight: 400;
+    font-family: "Josefin Slab";
+    text-align: center;
+}
+
+.sale {
+    border-radius: 15px;
+    background-color: #ffffff00;
+    padding: 5px 20px 5px 20px;
+    border: none;
+
+    /*    button-text*/
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    color: #484a4b;
+    font-weight: 700;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+    transition: all 1s;
+}
+
+.sale:hover {
+    color: white;
+    background-color: #787878;
+    
+}
+
+.news {
+    border-radius: 15px;
+    background-color: #ffffff00;
+    padding: 5px 20px 5px 20px;
+    border: none;
+    /*    button-text*/
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    color: #484a4b;
+    font-weight: 700;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+    margin-bottom: 194px;
+    margin-left: 10px;
+    transition: all 1s;
+}
+
+.news:hover {
+    color: white;
+    background-color: #787878;
+}
+
+.touch {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section {
+    width: 50%;
+    background-image: url(foto/Leafs%202.png);
+    background-repeat: no-repeat;
+    background-position: right 75px top 100px;
+}
+
+.section-two {
+    width: 50%;
+    background-image: url(foto/Place%20Your%20Image%20Here%20.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rate {
+    width: 100%;
+    background-color: #743924d9;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.rate-text-title {
+    font-size: 48px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    text-align: center;
+    padding-top: 70px;
+}
+
+.rate-text-body {
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.posters {
+    position: absolute;
+    z-index: 100;
+    left: 0px;
+    top: -231px;
+}
+
+.content {
+    width: 100%;
+    background-image: url(foto/Leaf%201.png), url(foto/Leafs%202.png), url(foto/Leaf%203.png), url(foto/Leaf%204.png);
+    background-repeat: no-repeat;
+    background-position: left 50px top 75px, right 50px top 75px, left 165px bottom 40px, right 165px bottom 40px;
+
+
+
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.name-info {
+    font-size: 58px;
+    letter-spacing: 1px;
+    color: #484a4b;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    text-align: center;
+    padding-top: 95px;
+}
+
+
+.text-info-body {
+    font-size: 25px;
+    color: #765a33;
+    font-weight: 500;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.block-for-info {
+    width: 294px;
+    height: 471px;
+    filter: drop-shadow(0px 7px 9px rgba(0, 0, 0, 0.19));
+    background-color: #e6e3da;
+    margin-bottom: 40px;
+}
+
+.foto-info {
+    width: 100%;
+}
+
+.select {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.lorem-text {
+    font-size: 29px;
+    letter-spacing: 1px;
+    color: #484a4b;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    text-align: center;
+}
+
+.lorem-text-body {
+    font-size: 13px;
+    color: #765a33;
+    font-weight: 400;
+    font-family: "Montserrat Alternates";
+    text-align: left;
+    margin-left: 15%;
+
+}
+
+.button-tabs {
+    border-radius: 15px;
+    background-color: #787878;
+    padding: 5px 20px 5px 20px;
+    border: none;
+    /*    button-text*/
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    color: white;
+    font-weight: 700;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 14%;
+    transition: all 1s;
+
+}
+
+.button-tabs:hover {
+    background-color: #454545;
+    animation: 5s ease-in;
+}
+
+.el {
+    margin-right: 110px;
+}
+
+.more {
+    width: 49px;
+    height: 49px;
+    border-radius: 24px;
+    background-color: #522c2c;
+    background-image: url(foto/Shape1.png);
+    margin-right: 45px;
+    transition: all 1s;
+    margin-bottom: 50px;
+}
+
+.more-one {
+    width: 49px;
+    height: 49px;
+    border-radius: 24px;
+    background-color: #522c2c;
+    background-image: url(foto/Shape.png);
+}
+
+.more-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.more:hover {
+    background-color: #000000;
+}
+
+.more-one:hover {
+    background-color: #000000;
+}
+
+.text-content {
+    font-size: 58px;
+    letter-spacing: 1px;
+    color: #484a4b;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    text-align: center;
+}
+
+.sidebar {
+    width: 100%;
+    position: relative;
+    background-image: url(foto/2.png), url(foto/3.png);
+    background-repeat: no-repeat;
+    padding-bottom: 740px;
+    background-position: right -78px top 455px, left -90px top 100px;
+
+}
+
+.text-sidebar {
+    font-size: 25px;
+    color: #765a33;
+    font-weight: 500;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+}
+
+.side-bar {
+    width: 278px;
+    height: 260px;
+    background-color: #c87e6b;
+    position: absolute;
+    top: 525px;
+    left: 248px;
+}
+
+
+.side-one {
+    width: 569px;
+    height: 353px;
+    background-color: #c87e6b00;
+    border: 5px solid #8a6a3e;
+    position: absolute;
+    top: 150px;
+    right: 230px;
+}
+
+.side-two {
+    position: absolute;
+    top: 181px;
+    right: 261px;
+}
+
+.cnt {
+
+    background-color: #dbc06e;
+    display: flex;
+    width: 100%;
+}
+
+.cnt-block {
+    width: 50%;
+    background-image: url(foto/99.png), url(foto/100.png);
+    background-repeat: no-repeat;
+    background-position: left 60px top 130px, right 65px top 125px;
+
+}
+
+.cnt-block-two {
+    width: 50%;
+    background-image: url(foto/45.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.cnt-text {
+    border-radius: 22px;
+    background-color: #424242;
+    width: 274px;
+    font-size: 27px;
+    letter-spacing: 1px;
+    color: #e7e4db;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.sale-money {
+    font-size: 164px;
+    letter-spacing: 4px;
+    color: #424242;
+    font-weight: 900;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+}
+
+.cnt-body {
+    font-size: 29px;
+    color: #424242;
+    font-weight: 600;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.subsection {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+
+.text-last {
+    margin: auto;
+    font-size: 58px;
+    letter-spacing: 1px;
+    color: #484a4b;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    padding-top: 220px;
+    background-image: url(foto/132.png);
+    background-repeat: no-repeat;
+    background-position: left 0px top 120px;
+}
+
+.text-body {
+    font-size: 25px;
+    color: #765a33;
+    font-weight: 400;
+    font-family: "Josefin Slab";
+    margin-top: 10px;
+}
+
+.cat-button {
+    font-size: 10px;
+    letter-spacing: 0px;
+    color: #e6e3da;
+    font-weight: 400;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+
+    padding: 5px 15px 5px 15px;
+    border-radius: 12px;
+    background-color: #454545;
+
+    margin-top: 20px;
+    border: none;
+    transition: all 1s;
+    margin-bottom: 170px;
+}
+
+.cat-button:hover {
+    background-color: #888571;
+    animation: 5s ease-in;
+}
+
+.img {
+    width: 808px;
+
+}
+
+.information {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-last-one {
+    margin: auto;
+    font-size: 58px;
+    letter-spacing: 1px;
+    color: #484a4b;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    padding-top: 220px;
+    background-image: url(foto/132.png);
+    background-repeat: no-repeat;
+    background-position: left 0px top 120px;
+}
+
+.text-body-one {
+    font-size: 25px;
+    color: #765a33;
+    font-weight: 400;
+    font-family: "Josefin Slab";
+    margin-top: 10px;
+}
+
+.cat-button-one {
+    font-size: 10px;
+    letter-spacing: 0px;
+    color: #e6e3da;
+    font-weight: 400;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+
+    padding: 5px 15px 5px 15px;
+    border-radius: 12px;
+    background-color: #454545;
+
+    margin-top: 20px;
+    border: none;
+    margin-bottom: 170px;
+}
+
+.information-block {
+    margin-left: 90px;
+    margin-bottom: 35px;
+}
+
+.cat-button-one:hover {
+    background-color: #888571;
+    animation: 5s ease-in;
+}
+
+.information-end {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form {
+    width: 100%;
+}
+
+.form-text {
+    font-size: 58px;
+    letter-spacing: 1px;
+    color: #484a4b;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-body-text {
+    font-size: 25px;
+    color: #484a4b;
+    font-weight: 400;
+    font-family: "Josefin Slab";
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-text {
+    background-color: #efefef;
+    border: 1.5px solid #b0b0b0;
+    padding: 10px 0px 10px 20px;
+    width: 820px;
+    margin-bottom: 30px;
+}
+
+.block-for-center {
+    text-align: center;
+}
+
+.input-text:focus {
+    outline: none;
+    box-shadow: 2px 5px 23px;
+}
+
+.button-end {
+    border-radius: 25px;
+    background-color: #c87e6b;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    margin-bottom: 50px;
+
+
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 19px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat Alternates";
+    text-align: center;
+}
+
+.button-end:hover {
+    background-color: #45241b;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    background-color: #424242;
+    padding-left: 72px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.social-list {
+    font-size: 25px;
+    letter-spacing: -1px;
+    line-height: 44px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat Alternates";
+    list-style: none;
+}
+
+.ul {
+    font-size: 38px;
+    letter-spacing: 4px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat Alternates";
+    margin-bottom: 25px;
+    padding-top: 75px;
+
+}
+
+@media screen and (max-width: 1450px) {
+    .side-two {
+        right: 175px;
+    }
+
+    .side-one {
+        right: 123px;
+    }
+
+    .side-bar {
+        left: 185px;
+    }
+
+}
+
+@media screen and (max-width: 1350px) {
+    .img {
+        width: 607px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .side-two {
+        right: 75px;
+    }
+
+    .cnt-block {
+        background-position: left 12px top 130px, right 17px top 125px;
+    }
+
+    .type {
+        padding: 13px;
+    }
+
+    .side-two {
+        right: 47px;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .information {
+        justify-content: center;
+    }
+
+    .block-last {
+        text-align: center;
+    }
+
+    .subsection {
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .text-last {
+        padding-top: 30px;
+    }
+
+    .text-last-one {
+        padding-top: 30px;
+    }
+
+    .information-end {
+        flex-direction: column-reverse;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .cat-button {
+        margin-bottom: 50px;
+    }
+
+    .cat-button-one {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .side-two {
+        right: 0px;
+    }
+
+    .logo-li {
+        margin-right: 0px;
+    }
+
+    .type {
+        padding: 10px;
+    }
+}
